@@ -1,13 +1,26 @@
-import { useState } from "react";
-
 const App = () => {
-  let greeting;
-  let [isLoggedIn, setLoggedIn] = useState(true);
-  if (isLoggedIn) {
-    greeting = "hello world";
-  }
+  let cars = [
+    {
+      color: "red",
+      price: 50000,
+    },
+    {
+      color: "red",
+      price: 5000000,
+    },
+  ];
 
-  return <>{greeting}</>;
+  // not using {} inside map() method
+  const listing = cars.map((car) => (
+    <li key={car.price}>
+      car color is {car.color} and price is {car.price}
+    </li>
+  ));
+  return (
+    <>
+      <ul>{listing}</ul>
+    </>
+  );
 };
 
 export default App;
