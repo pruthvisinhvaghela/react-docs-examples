@@ -1,7 +1,9 @@
+import { useState } from "react";
+
 const App = () => {
   let greeting;
-  let result = true;
-  if (result) {
+  let [isLoggedIn, setLoggedIn] = useState(true);
+  if (isLoggedIn) {
     greeting = "hello world";
   }
 
