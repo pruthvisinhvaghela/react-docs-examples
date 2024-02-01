@@ -10,7 +10,7 @@ const App = () => {
     },
   ];
 
-  // not using {} inside map() method
+  // not using {} inside map() method instead of avoiding errors
   const listing = cars.map((car) => (
     <li key={car.price}>
       car color is {car.color} and price is {car.price}
