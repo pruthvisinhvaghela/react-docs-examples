@@ -1,5 +1,11 @@
 const App = () => {
-  return <div>this is default app</div>;
+  let greeting;
+  let result = true;
+  if (result) {
+    greeting = "hello world";
+  }
+
+  return <>{greeting}</>;
 };
 
 export default App;
