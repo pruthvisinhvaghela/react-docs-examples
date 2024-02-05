@@ -5,7 +5,7 @@ const App = () => {
       price: 50000,
     },
     {
-      color: "red",
+      color: "blue",
       price: 5000000,
     },
   ];
